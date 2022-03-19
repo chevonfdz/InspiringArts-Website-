@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Inspiring Arts</title>
+		<link rel="icon" href="Images/Inspirings_Arts_New.png">
+		<script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="css/sitemapstyle.css">
+        <link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+	
+<!--Navigation bar-->
+	<nav>
+	<input type="checkbox" id="check">
+	<label for="check" class="checkbtn">
+	<i class="fas fa-bars"></i>
+	</label>
+	<img class="logo" src="Images/Inspirings_Arts_New.png" alt="logo1">
+		<ul>
+			<li><a href="main.html">Home</a></li>
+			<li><a href="gallerypage.html">Art House</a></li>
+			<li><a href="buyProductpg.html">Store</a></li>
+			<li><a href="Quiz.html">Quiz</a></li>
+			<li><a href="Sitemap.html">Site map</a></li>
+			<li><a href="Aboutus.html">About</a></li>
+			<li><a href="Query.html">Ratings & Reviews</a></li>
+		</ul>
+	</nav>
+	
+<!--Scroll button-->
+<button onclick="topFunction()" id="goTopBtn" title="Go to top"> &#8593; </button>
+<br>
+
+<!--Site map-->
+		<h1 id="sitemaptitle">Site Map</h1>
+			<svg id="mysvg" height="1000" width="180">
+			<g id="shape1" class="rect">
+				<rect x="15" y="130" height="50" width="150" stroke="yellow" fill="none" stroke-width="3" />
+				<text fill="#000" font-size="14" x="90" y="160" font-family="Arial" text-anchor="middle">Home</text>
+			</g>
+			<g id="arrow1" >
+				<line id="shapeId1" stroke="purple" stroke-width="2" x1="90" y1="180" x2="90" y2="230"></line>
+				<polyline points="95, 220 90, 230 85, 220" stroke="purple" stroke-width="2" fill="none" />
+			</g>
+			<g id="shape2" class="rect">
+				<rect x="15" y="230" height="50" width="150" stroke="#8B4513" fill="none" stroke-width="2" />
+			<text fill="#000" font-size="14" x="90" y="260" font-family="Arial" text-anchor="middle">Art House</text></g>
+			<g id="arrow2" >
+				<line id="shapeId2" stroke="purple" stroke-width="2" x1="90" y1="280" x2="90" y2="330"></line>
+				<polyline points="95, 320 90, 330 85, 320" stroke="purple" stroke-width="2" fill="none" />
+			</g>
+			<g id="shape3" class="rect">
+				<rect x="15" y="330" height="50" width="150" stroke="#8B4513" fill="none" stroke-width="2" />
+			<text fill="#000" font-size="14" x="90" y="360" font-family="Arial" text-anchor="middle">Store</text></g>
+			<g id="arrow3" >
+				<line id="shapeId3" stroke="purple" stroke-width="2" x1="90" y1="380" x2="90" y2="430"></line>
+				<polyline points="95, 420 90, 430 85, 420" stroke="purple" stroke-width="2" fill="none" />
+			</g>
+			<g id="shape4" class="rect">
+				<rect x="15" y="430" height="50" width="150" stroke="#8B4513" fill="none" stroke-width="2" />
+			<text fill="#000" font-size="14" x="90" y="460" font-family="Arial" text-anchor="middle">Quiz</text></g>
+			<g id="arrow4" >
+				<line id="shapeId4" stroke="purple" stroke-width="2" x1="90" y1="480" x2="90" y2="530"></line>
+				<polyline points="95, 520 90, 530 85, 520" stroke="purple" stroke-width="2" fill="none" />
+			</g>
+			<g id="shape5" class="rect">
+				<rect x="15" y="530" height="50" width="150" stroke="#8B4513" fill="none" stroke-width="2" />
+			<text fill="#000" font-size="14" x="90" y="560" font-family="Arial" text-anchor="middle">Sitemap</text></g>
+			<g id="arrow5" >
+				<line id="shapeId5" stroke="purple" stroke-width="2" x1="90" y1="580" x2="90" y2="630"></line>
+				<polyline points="95, 620 90, 630 85, 620" stroke="purple" stroke-width="2" fill="none" />
+			</g>
+			<g id="shape6" class="rect">
+				<rect x="15" y="630" height="50" width="150" stroke="#8B4513" fill="none" stroke-width="2" />
+			<text fill="#000" font-size="14" x="90" y="660" font-family="Arial" text-anchor="middle">About</text></g>
+			<g id="arrow6" >
+				<line id="shapeId6" stroke="purple" stroke-width="2" x1="90" y1="680" x2="90" y2="730"></line>
+				<polyline points="95, 720 90, 730 85, 720" stroke="purple" stroke-width="2" fill="none" />
+			</g>
+			<g id="shape7" class="rect">
+				<rect x="15" y="730" height="50" width="150" stroke="#8B4513" fill="none" stroke-width="2" />
+			<text fill="#000" font-size="14" x="90" y="760" font-family="Arial" text-anchor="middle">R & R</text></g>
+			</svg>
+			
+			<!--Javascript section-->
+			<script>
+				document.getElementById("shape1").
+				addEventListener("click", function() {
+					document.location.href="main.html";
+			});
+			document.getElementById("shape2").
+				addEventListener("click", function() {
+					document.location.href="gallerypage.html";
+			});
+						document.getElementById("shape3").
+				addEventListener("click", function() {
+					document.location.href="buyProductpg.html";
+			});
+						document.getElementById("shape4").
+				addEventListener("click", function() {
+					document.location.href="Quiz.html";
+			});
+						document.getElementById("shape5").
+				addEventListener("click", function() {
+					document.location.href="Sitemap.html";
+			});
+						document.getElementById("shape6").
+				addEventListener("click", function() {
+					document.location.href="Aboutus.html";
+			});
+						document.getElementById("shape7").
+				addEventListener("click", function() {
+					document.location.href="Query.html";
+			});
+			
+			
+			/*scroll button javascript*/
+
+			var mybutton = document.getElementById("goTopBtn");
+			
+			window.onscroll = function() {scrollFunction()};
+			
+			function scrollFunction() {
+			  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+			    mybutton.style.display = "block";
+			  } else {
+			    mybutton.style.display = "none";
+			  }
+			}
+			
+			function topFunction() {
+			  document.body.scrollTop = 0;
+			  document.documentElement.scrollTop = 0;
+			}
+			</script>
+	
+	<!-- Footer -->	
+	<footer class= "footer">
+	<div class="container">
+        <div class="sec aboutus">
+        <h2>About Us</h2>
+            <p>We showcase the finest arts by our most celebrated artists. 
+			Works are carefully selected so as to bring admiration to history by appreciating it and pass on 
+			the knowledge to the next generation.</p>
+        <ul class="social">
+            <li><a href="https://www.facebook.com/"><i class="fa fa-facebook" aria-hidden="true"> </i></a></li>
+            <li><a href="https://twitter.com/?lang=en"><i class="fa fa-twitter" aria-hidden="true"> </i></a></li>
+            <li><a href="https://www.instagram.com/"><i class="fa fa-instagram" aria-hidden="true"> </i></a></li>
+            <li><a href="https://www.youtube.com/"><i class="fa fa-youtube" aria-hidden="true"> </i></a></li>
+            <li><a href="https://lk.linkedin.com//"><i class="fa fa-linkedin" aria-hidden="true"> </i></a></li>
+        </ul>
+        <br>
+        <br>
+            <p>Page Editor - <a href="Student_4.html"><span id= "pgeditor">Harees Srinivasan</span></a></p>
+
+        </div>
+        <div class="sec quicklinks">
+            <h2>Quick Links</h2>
+            <ul>
+			<li><a href="main.html">Home</a></li>
+			<li><a href="gallerypage.html">Art House</a></li>
+			<li><a href="buyProductpg.html">Store</a></li>
+			<li><a href="Quiz.html">Quiz</a></li>
+			<li><a href="Sitemap.html">Site map</a></li>
+			<li><a href="Aboutus.html">About</a></li>
+        </div>
+              <div class="sec contactinfo">
+            <h2>Contact Info</h2>
+            <ul class="info">
+                <li>
+                    <span><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+                    <span>58 Galle Rd<br>
+                    Colombo, 00600,<br>Sri Lanka</span>
+          <br><br>
+                </li>
+                
+                <li>
+                    <span><i class="fa fa-phone" aria-hidden="true"></i></span>
+                    <p><a href="tel:+94178956432">+94 178 956 432</a><br>
+                        <a href="tel:+94178956432">+94 178 956 432</a></p>
+                        <br><br>
+                </li>
+                
+                <li>
+                    <span><i class="fa fa-envelope" aria-hidden="true"></i></span>
+                    <p><a href="mailto:inspiringarts@arts.ac.lk">inspiringarts@arts.ac.lk</a></p>
+                </li>
+            </ul>
+            </div>      
+          </div>
+    <div class="copyright">
+    <p>Copyright @ 2021 Inspiring Arts. All Rights Reserved</p>
+  </div>
+  
+  </footer>
+	</body>
+</html>

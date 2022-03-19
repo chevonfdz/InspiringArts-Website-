@@ -1,0 +1,324 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="UTF-8">
+	    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+		<title>Inspiring Arts</title>
+		<script src="Js/Quiz.js"></script>
+		<link rel="stylesheet" href="css/Quiz.css">
+		<script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>
+		<link rel="icon" href="Images/Inspirings_Arts_New.png">
+	</head>	
+	<body>
+	<!-- Navigation -->
+	<nav>
+	<input type="checkbox" id="check">
+	<label for="check" class="checkbtn">
+	<i class="fas fa-bars"></i>
+	</label>
+	<img class="logo" src="Images/Inspirings_Arts_New.png" alt="logo1">
+		<ul>
+			<li><a href="main.html">Home</a></li>
+			<li><a href="gallerypage.html">Art House</a></li>
+			<li><a href="buyProductpg.html">Store</a></li>
+			<li><a href="Quiz.html">Quiz</a></li>
+			<li><a href="Sitemap.html">Site map</a></li>
+			<li><a href="Aboutus.html">About</a></li>
+			<li><a href="Query.html">Ratings & Reviews</a></li>
+		</ul>
+	</nav>
+	<!-- Scroll button -->
+<button onclick="topFunction()" id="goTopBtn" title="Go to top"> &#8593; </button>
+
+	
+		  <div class="startButton">
+		  	<input class="quizStart" id="startButton" type="button" value="Start" onClick="startQuiz()"/>
+		  </div>
+		  <br/>	
+		  <br/>
+		  <div class="circle"><div class="timer" id="timer"></div></div>
+		  <div class="row">
+			<div class="column">
+			  <div class = "question">
+				<div class="questionPlace" >
+				  <p>1.  Who was the first famous artist on Italian Renaissance?</p>
+				  <input class="answer" type="radio" name="q1" value="2" disabled="disabled">
+				  <label id="correctString1">Masaccio</label>
+				  <br>
+				  <input class="answer" type="radio" name="q1" value="-1" disabled="disabled">
+				  <label>Micheal Angelo</label>
+				  <br>
+				  <input class="answer" type="radio" name="q1" value="-1" disabled="disabled">
+				  <label>Mantegna</label>
+				  <br>
+				  <input class="answer" type="radio" name="q1" value="-1" disabled="disabled">
+				  <label>Leonardo Davinci</label>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		  <div class="row">
+			<div class="column">
+			  <div class = "question">
+				<div class="questionPlace" >
+					<p>2.  What is the Monalisa Painting famous for ?</p>
+				  <input class="answer" type="radio" name="q2" value="-1" disabled="disabled">
+				  <label>Her Eyes</label>
+				  <br>
+				  <input class="answer" type="radio" name="q2" value="2" disabled="disabled">
+				  <label id="correctString2">Her Mysterious Smile</label>
+				  <br>
+				  <input class="answer" type="radio" name="q2" value="-1" disabled="disabled">
+				  <label>Her haircut</label>
+				  <br>
+				  <input class="answer" type="radio" name="q2" value="-1" disabled="disabled">
+				  <label>Her clothes</label>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		  <div class="row">
+			<div class="column">
+			  <div class = "question">
+				<div class="questionPlace" >
+				  <p>3. Which of these artists famous<br/>&nbsp;&nbsp;&nbsp;&nbsp;for using human paintbrushes ?</p>
+				  <input class="answer" type="radio" name="q3" value="-1" disabled="disabled">
+				  <label>Paul Cezzane</label>
+				  <br>
+				  <input class="answer" type="radio" name="q3" value="-1" disabled="disabled">
+				  <label>Georgio Vasari</label>
+				  <br>
+				  <input class="answer" type="radio" name="q3" value="2" disabled="disabled">
+				  <label id="correctString3">Yves Klein</label>
+				  <br>
+				  <input class="answer" type="radio" name="q3" value="-1" disabled="disabled">
+				  <label>Jackson Pollock</label>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		  <div class="row">
+			<div class="column">
+			  <div class = "question">
+				<div class="questionPlace" >
+				  <p>4. Which dutch artist is famous for his<br/>&nbsp;&nbsp;&nbsp;&nbsp;strange geometrical puzzles ?</p>
+				  <input class="answer" type="radio" name="q4" value="-1" disabled="disabled">
+				  <label>Jan Van Eyk</label>
+				  <br>
+				  <input class="answer" type="radio" name="q4" value="-1" disabled="disabled">
+				  <label>Vincent Van Goph</label>
+				  <br>
+				  <input class="answer" type="radio" name="q4" value="-1" disabled="disabled">
+				  <label>Pieter Breughal</label>
+				  <br>
+				  <input class="answer" type="radio" name="q4" value="2" disabled="disabled">
+				  <label id="correctString4">M.S. Escher</label>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		  <div class="row">
+			<div class="column">
+			  <div class = "question">
+				<div class="questionPlace">
+				  <p>5. Which of these is a paint made <br/>&nbsp;&nbsp;&nbsp;&nbsp;from pigments and plastics ?</p>
+				  <input class="answer" type="radio" name="q5" value="-1" disabled="disabled">
+				  <label>Tempera</label>
+				  <br>
+				  <input class="answer" type="radio" name="q5" value="-1" disabled="disabled">
+				  <label>Acetone</label>
+				  <br>
+				  <input class="answer" type="radio" name="q5" value="-1" disabled="disabled">
+				  <label>Gesso</label>
+				  <br>
+				  <input class="answer" type="radio" name="q5" value="2" disabled="disabled">
+				  <label id="correctString5">Acryclic</label>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		  <div class="row">
+			<div class="column">
+			  <div class = "question">
+				<div class="questionPlace">
+				  <p>6. To which artistic movement does Paul Gaugin's<br/>&nbsp;&nbsp;&nbsp;&nbsp;the Yellow Christ belong ?</p>
+				  <input class="answer" type="radio" name="q6" value="-1" disabled="disabled">
+				  <label>Impressionism</label>
+				  <br>
+				  <input class="answer" type="radio" name="q6" value="-1" disabled="disabled">
+				  <label>Bauhaus</label>
+				  <br>
+				  <input class="answer" type="radio" name="q6" value="2" disabled="disabled">
+				  <label id="correctString6">Cloisonnism</label>
+				  <br>
+				  <input class="answer" type="radio" name="q6" value="-1" disabled="disabled">
+				  <label>Fauvism</label>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		  <div class="row">
+			<div class="column">
+			  <div class = "question">
+				<div class="questionPlace">
+				  <p>7.  Which shapes depict within a man drawn by Davinci<br/>&nbsp;&nbsp;&nbsp;&nbsp;named 'Vitruvian Man' ?</p>
+				  <input class="answer" type="radio" name="q7" value="-1" disabled="disabled">
+				  <label>Rectangle and Square</label>
+				  <br>
+				  <input class="answer" type="radio" name="q7" value="2" disabled="disabled">
+				  <label id="correctString7">Circle and Square</label>
+				  <br>
+				  <input class="answer" type="radio" name="q7" value="-1" disabled="disabled">
+				  <label>Triangle and Hexagon</label>
+				  <br>
+				  <input class="answer" type="radio" name="q7" value="-1" disabled="disabled">
+				  <label>Ellipse and diamond</label>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		  <div class="row">
+			<div class="column">
+			  <div class = "question">
+				<div class="questionPlace">
+				  <p>8. Who was the artist given the quote saying<br/>&nbsp;&nbsp;&nbsp;"A man paints with his brains and not with his hands" ?</p>
+				  <input class="answer" type="radio" name="q8" value="2" disabled="disabled">
+				  <label id="correctString8">Micheal Angelo</label>
+				  <br>
+				  <input class="answer" type="radio" name="q8" value="-1" disabled="disabled">
+				  <label>Raphael</label>
+				  <br>
+				  <input class="answer" type="radio" name="q8" value="-1" disabled="disabled">
+				  <label>Pablo Picaso</label>
+				  <br>
+				  <input class="answer" type="radio" name="q8" value="-1" disabled="disabled">
+				  <label>Claude Monet</label>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		  <div class="row">
+			<div class="column">
+			  <div class = "question">
+				<div class="questionPlace">
+				  <p>9. What was the year the popular painting "The Starry Night" painted ?</p>
+				  <input class="answer" type="radio" name="q9" value="-1" disabled="disabled">
+				  <label>1889</label>
+				  <br>
+				  <input class="answer" type="radio" name="q9" value="2" disabled="disabled">
+				  <label id="correctString9">1912</label>
+				  <br>
+				  <input class="answer" type="radio" name="q9" value="-1" disabled="disabled">
+				  <label>1920</label>
+				  <br>
+				  <input class="answer" type="radio" name="q9" value="-1" disabled="disabled">
+				  <label>1885</label>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		  <div class="row">
+			<div class="column">
+			  <div class = "question">
+				<div class="questionPlace">
+				  <p>10. What does the Venus of Brassempouy represent? ?</p>
+				  <input class="answer" type="radio" name="q10" value="-1" disabled="disabled">
+				  <label>An angel</label>
+				  <br>
+				  <input class="answer" type="radio" name="q10" value="2" disabled="disabled">
+				  <label id="correctString10">A woman's head</label>
+				  <br>
+				  <input class="answer" type="radio" name="q10" value="-1" disabled="disabled">
+				  <label>A human figure</label>
+				  <br>
+				  <input class="answer" type="radio" name="q10" value="-1" disabled="disabled">
+				  <label>An old man</label>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		  <br/>
+		  <div class="submitter">
+			<input class="quizSubmit" id="submitButton" type="submit" value="Submit" disabled="disabled" onClick="submitQuiz()"/>
+		  </div>
+
+		  <!--show only wrong answers on submit--> 
+		  <br/><br/>
+		<div class = "allAnswer">
+		  <div class="quizAnswers" id="correctAnswer1"></div>
+		  <div class="quizAnswers" id="correctAnswer2"></div>
+		  <div class="quizAnswers" id="correctAnswer3"></div>
+		  <div class="quizAnswers" id="correctAnswer4"></div>
+		  <div class="quizAnswers" id="correctAnswer5"></div>
+		  <div class="quizAnswers" id="correctAnswer6"></div>
+		  <div class="quizAnswers" id="correctAnswer7"></div>
+		  <div class="quizAnswers" id="correctAnswer8"></div>
+		  <div class="quizAnswers" id="correctAnswer9"></div>
+		  <div class="quizAnswers" id="correctAnswer10"></div> 
+		</div>
+		  <!--show score upon submit-->
+		  <div class="score" >
+			  <h2 id="userScore"></h2>
+			  <h6 id="timeRemain"></h6>
+		  </div>
+	<!-- Footer -->	
+	<footer class= "footer">
+	<div class="container">
+        <div class="sec aboutus">
+        <h2>About Us</h2>
+            <p>We showcase the finest arts by our most celebrated artists. 
+			Works are carefully selected so as to bring admiration to history by appreciating it and pass on 
+			the knowledge to the next generation.</p>
+        <ul class="social">
+            <li><a href="https://www.facebook.com/"><i class="fa fa-facebook" aria-hidden="true"> </i></a></li>
+            <li><a href="https://twitter.com/?lang=en"><i class="fa fa-twitter" aria-hidden="true"> </i></a></li>
+            <li><a href="https://www.instagram.com/"><i class="fa fa-instagram" aria-hidden="true"> </i></a></li>
+            <li><a href="https://www.youtube.com/"><i class="fa fa-youtube" aria-hidden="true"> </i></a></li>
+            <li><a href="https://lk.linkedin.com//"><i class="fa fa-linkedin" aria-hidden="true"> </i></a></li>
+        </ul>
+        <br>
+        <br>
+               <p>Page Editor - <a href="Student_3.html"><span id= "pgeditor">Mathavan Suthaharan</span></a></p>
+        </div>
+        <div class="sec quicklinks">
+            <h2>Quick Links</h2>
+            <ul>
+			<li><a href="main.html">Home</a></li>
+			<li><a href="gallerypage.html">Art House</a></li>
+			<li><a href="buyProductpg.html">Store</a></li>
+			<li><a href="Quiz.html">Quiz</a></li>
+			<li><a href="Sitemap.html">Site map</a></li>
+			<li><a href="Aboutus.html">About</a></li>
+            </ul>
+        </div>
+              <div class="sec contactinfo">
+            <h2>Contact Info</h2>
+            <ul class="info">
+                <li>
+                    <span><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+                    <span>58 Galle Rd<br>
+                    Colombo, 00600,<br>Sri Lanka</span>
+          <br><br>
+                </li>
+                
+                <li>
+                    <span><i class="fa fa-phone" aria-hidden="true"></i></span>
+                    <p><a href="tel:+94178956432">+94 178 956 432</a><br>
+                        <a href="tel:+94178956432">+94 178 956 432</a></p>
+                        <br><br>
+                </li>
+                
+                <li>
+                    <span><i class="fa fa-envelope" aria-hidden="true"></i></span>
+                    <p><a href="mailto:inspiringarts@arts.ac.lk">inspiringarts@arts.ac.lk</a></p>
+                </li>
+            </ul>
+            </div>      
+          </div>
+    <div class="copyright">
+    <p>Copyright @ 2021 Inspiring Arts. All Rights Reserved</p>
+  </div>
+  
+  </footer>
+	</body>
+</html>

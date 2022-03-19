@@ -1,0 +1,128 @@
+/*Query Form*/
+
+#queryform {
+    position: center;
+    top: 25%;
+    filter: drop-shadow(0px 2px 4px #00000040);
+    width: 55%;
+    margin: 0;
+    height: auto;
+}
+#preview_form {
+    display: none;
+    position: center;
+    filter: drop-shadow(0px 2px 4px #00000040);
+    width: 55%;
+    font-size: 1vw;
+    font-weight: 600;
+    height: 55vh;
+    background: #fff;
+    box-sizing: border-box;
+    border-radius: 20px;
+}
+#form_content {
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    padding: 30px;
+}
+#comment, #preview_form span {
+    height: 175px;
+    overflow: scroll;
+    overflow-wrap: break-word;
+    font-weight: 400;
+}
+.formDiv {
+	padding-left: 475px;
+	display: block;
+	text-align: center;
+}
+.butns {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 15px;
+}
+
+label {
+    font-size: 24px;
+    font-weight: 600;
+    text-shadow: 0px 1px 2px #00000040;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    background: #ffffff;
+    border-radius: 5px;
+    border: 0;
+    font-size: 16px;
+    width: 100%;
+    text-shadow: 0px 4px 4px #00000040;
+    padding: 1% 5%;
+    margin: 10px;
+}
+
+input[type="button"],
+input[type="reset"] {
+    background: #555555;
+    box-shadow: 0px 4px 4px #00000040;
+    border: 0;
+    border-radius: 10px;
+    width: 120px;
+    font-size: 16px;
+    text-align: center;
+    padding: 2%;
+    margin: 2% 5% 0 5%;
+    font-weight: 700;
+    opacity: 0.9;
+    transition: transform 0.5s, opacity 0.5s;
+}
+
+input[type="button"]:hover,
+input[type="reset"]:hover {
+    background: #CACAA6;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus,
+input[type="button"]:focus,
+input[type="reset"]:focus {
+    outline: none;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border: 2px solid #939381;
+    margin: 8px;
+}
+
+.radioItem {
+    font-weight: 500;
+    font-size: 20px;
+    margin: 0 1%;
+}
+
+input[type="radio"]:after {
+    width: 12px;
+    height: 12px;
+    position: relative;
+    top: -5px;
+    border-radius: 15px;
+    background-color: #fff;
+    content: "";
+    display: inline-block;
+    border: 3px solid #fff;
+}
+
+input[type="radio"]:checked:after {
+    background-color: #303029;
+}
+
+.radioBox label {
+    text-shadow: 0px 1px 2px #00000040;
+}

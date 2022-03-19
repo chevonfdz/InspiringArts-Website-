@@ -1,0 +1,430 @@
+
+/*General page styling*/
+*{
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	list-style: none;
+	box-sizing: border-box;
+    align-content: center;
+    align-items: center;
+    font-family: 'Raleway', sans-serif;
+}
+
+body{
+	margin-bottom: 200px;
+	overflow-x: hidden;
+	background-color: #FFA500;
+}
+
+/*navigation bar styling*/
+
+nav{
+	background: black;
+	height: 80px;
+	width: 100%;
+}
+.logo {
+	width: 80px;
+	float: left;
+	margin-top: 0px;
+}
+nav ul{
+	float: right;
+	padding-right: 250px;
+}
+nav ul li{
+	display: inline-block;
+	line-height: 80px;
+	margin: 0 20px;
+}
+nav ul li a{
+	color: white;
+	font-size: 17px;
+	text-transform: uppercase;
+}
+nav ul li a:hover{
+	background-color: #68685C;
+	border-radius: 5px;
+	opacity: 0.9;
+	transition: .3s  ease;
+}
+.checkbtn{
+	font-size: 30px;
+	color: white;
+	float: right;
+	line-height: 80px;
+	margin-right: 40px;
+	cursor: pointer;
+	display: none;
+}
+#check{
+	display: none;
+}
+
+/*Responisve navigation bar styling*/
+
+@media (max-width: 952px){
+	label.logo{
+		font-size: 30px;
+		padding-left: 50px;
+	}
+	nav ul li a{
+		font-size:16px;
+	}
+}
+
+@media (max-width: 858px){
+	.checkbtn{
+		display: block;
+	}
+	ul{
+		position: fixed;
+		width: 100%;
+		height: 100vh;
+		background: #2c3e50;
+		top: 80px;
+		left: -100%;
+		text-align: center;
+		transition: all .5s;
+        z-index: 1000;
+	}
+	nav ul li{
+		display: block;
+		margin: 50px 0;
+		line-height: 30px;
+	}
+	nav ul li a{
+		font-size: 20px;
+	}
+	#check:checked ~ ul{
+		left: 0;
+	}
+}
+
+/* Scroll button styling*/
+
+#goTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 16px;
+  font-family: 'Raleway', sans-serif;
+  border: none;
+  outline: none;
+  background-color: #F8D704;
+  color: black;
+  font-weight: bold;
+  padding: 15px;
+  border-radius: 10px;
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+#goTopBtn:hover {
+    transform: scale(1.2);
+    opacity: 0.9;
+}
+/*Footer styling*/
+
+.footer{
+	position: relative;
+	top: 200px;
+	width: 100%;
+	height: auto;
+	padding: 50px 80px;
+	background: black;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.footer .container{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	flex-direction: row;
+}
+.footer .container .sec{
+	margin-right: 30px;
+}
+.footer .container .sec.aboutus{
+	width: 40%;
+}
+.footer .container  h2{
+	position: relative;
+	color: #fff;
+	font-weight: 500;
+	margin-bottom: 15px;
+}
+.footer .container  h2:before{
+	content:'';
+	position: absolute;
+	bottom: -5px;
+	left: 0;
+	width: 50px;
+	height: 2px;
+	background: #f00;
+}
+.footer  p{
+	color: #999;
+}
+#pgeditor{
+	color: #999;
+}
+.social{
+	margin-top: 20px;
+	display: flex;
+}
+.social li{
+	list-style: none;
+}
+.social li a{
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	background: #222;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-right: 10px;
+	text-decoration: none;
+	border-radius: 4px;
+}
+.social li a:hover{
+	background: #f00;
+}
+.social li a .fa{
+	color: #fff;
+	font-size: 20px;
+}
+	
+.quicklinks{
+	position: relative;
+	width: 25%;
+}
+.quicklinks ul li{
+	list-style: none;
+}
+.quicklinks ul li a{
+	color: #999;
+	text-decoration: none;
+	margin-bottom: 10px;
+	display: inline-block;
+}
+.quicklinks ul li a:hover{
+	color: white;
+	transition: .3s  ease;
+}
+.contactinfo{
+	width: auto;
+	margin-right: 0 !important;
+}
+.contactinfo .info{
+	position: relative;
+}
+.contactinfo.info li{
+	display: flex;
+	margin-bottom: 16px;
+}
+.contactinfo.info li span:nth-child(1){
+	color: #fff;
+	font-size: 20px;
+	margin-right: 10px;
+}
+.contactinfo.info li span{
+	color: #999;
+}
+.contactinfo.info li a{
+	color: #999;
+	text-decoration: none;
+}
+.contactinfo.info li a:hover{
+	color: #fff;
+}
+.info{
+	color: #999;
+}
+.copyright{
+    position: relative;
+    top: 20px;
+	width: 100%;
+	padding: 8px 100px;
+	text-align: center;
+	color: #999;
+}
+@media screen and (max-width:992px){
+    
+    .aboutus, .contactinfo{
+        width: 35%;
+    }
+    .quicklinks{
+        width: 30%;
+    }
+}
+
+@media screen and (max-width:767px){
+    .aboutus, .contactinfo, .quicklinks{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .container{
+        flex-direction: column;
+    }
+}   
+
+/*Gallery portion styling*/*/
+.galpage {
+	margin-bottom:50px;
+}
+
+            
+h1 {
+    font-family: Candara; 
+    font-size: 400%; 
+    color: black;
+    text-align: center}
+			
+#galpara {
+	text-align: center;
+	font-size: 20px;
+	margin: 0 50px 0 50px;
+	}
+			
+#galpara2 {
+	text-align:center;
+	font-size: 25px;
+	margin: 0 100px 250px 0;
+	position:relative;
+	left: 70px;
+	}
+            
+.galpics {
+    box-shadow: 10px 10px 5px #696969;
+    cursor: pointer;
+	transition: 0.3s;
+    margin: 30px 30px 30px 30px;
+	position: relative;
+	left: 30px;
+    }
+
+.row2{
+	position: relative;
+	left: 80px;
+}
+
+/*Hover effect styling for gallery images*/
+#pic1:hover {
+	opacity: 0.4;
+	}
+	
+#pic2:hover {
+	opacity: 0.4;
+	}
+	
+#pic3:hover {
+	opacity: 0.4;
+	}
+	
+#pic4:hover {
+	opacity: 0.4;
+	}
+			
+#pic5:hover {
+	opacity: 0.4;
+	}
+
+#pic6:hover {
+	opacity: 0.4;
+	}
+
+#pic6:hover {
+	opacity: 0.4;
+	}
+
+#pic7:hover {
+	opacity: 0.4;
+	}
+	
+#pic8:hover {
+	opacity: 0.4;
+	}
+	
+#pic9:hover {
+	opacity: 0.4;
+	}
+				
+#pic10:hover {
+	opacity: 0.4;
+	}
+
+#pic11:hover {
+	opacity: 0.4;
+	}
+	
+#pic12:hover {
+	opacity: 0.4;
+	}
+#popup {
+  display:none;
+}	
+
+
+/*Selection portion styling*/
+.selectDiv {
+	position: relative;
+	left: 500px;
+	bottom: 200px;
+}
+
+.drpDown1 {
+	font-size: 25px;
+	font-family: Candara;
+	position: relative;
+	left: 120px;
+}
+
+.selections{
+	position: relative;
+	right: 5px;
+}
+
+/*Background colour selection styling*/
+#changebg{
+	font-size: 30px;
+	text-align: center-left;
+}
+
+/*Text colour selection styling*/
+#changetxt{
+	font-size: 30px;
+	position:relative;
+	left: 50px;
+}
+
+/*Larger images styling*/
+
+#bigImg1{display: none;}
+#bigImg2{display: none;}
+#bigImg3{display: none;}
+#bigImg4{display: none;}
+#bigImg5{display: none;}
+#bigImg6{display: none;}
+#bigImg7{display: none;}
+#bigImg8{display: none;}
+
+/*Image description styling*/
+.picstory {
+position: relative;
+bottom: 300px;
+left: 100px;
+text-align: center;
+margin: 0 600px 20px 300px; 
+}
+
+/*Larger images portion styling*/
+.displaybigpics{
+	padding-left: 100px;
+}
+

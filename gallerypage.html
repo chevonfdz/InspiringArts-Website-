@@ -1,0 +1,377 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="css/galleryss.css">
+		 <script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>
+        <title>Inspiring Arts</title>
+	    <link rel="icon" href="Images/Inspirings_Arts_New.png">
+	</head>
+	<body>
+		<script>
+		<!--Function to select background colour and change it accordingly-->
+		function getbgchoice(){
+		var selectedVal=document.getElementById("bgcolid").value;
+	
+		switch(selectedVal){
+			case "tomato":
+				document.body.style.backgroundColor = "#FF6347";
+			break;
+			case "olive":
+			    document.body.style.backgroundColor = "#808000";
+			break;
+			case "plum":
+				document.body.style.backgroundColor = "#DDA0DD";
+			break;
+			case "chocolate":
+				document.body.style.backgroundColor = "#D2691E";
+			break;
+			default:
+				document.body.style.backgroundColor = 'orange';
+		}
+		}
+		
+		<!--Function to select text colour and change accordingly-->
+		function gettxtchoice(){
+				var selectedtxtColor = document.getElementById("drp2").value;
+					
+			if (selectedtxtColor == "black") {
+				document.body.style.color = selectedtxtColor;
+				removeProperty();
+			}else
+			if (selectedtxtColor == "indigo") {	
+			    document.body.style.color = selectedtxtColor;
+			    removeProperty();
+			}else
+			if (selectedtxtColor == "turquoise") {	
+				document.body.style.color = selectedtxtColor;
+				removeProperty();
+			}else
+			if (selectedtxtColor == "crimson") {	
+				document.body.style.color = selectedtxtColor;
+				removeProperty();
+			}else {
+				document.body.style.color != selectedtxtColor;
+				removeProperty();
+				}
+		}
+
+		<!--Function to display and scroll to larger image when gallery image is clicked-->
+		function showpic1() {
+		  var x = document.getElementById("bigImg1");
+		  if (x.style.display === "none") {
+		  	x.style.display = "block";
+		  } else {
+		    x.style.display = "none";
+		  }
+		  x.scrollIntoView({behaviour: "smooth", block: "center"});
+		}
+		
+		function showpic2() {
+		  var x = document.getElementById("bigImg2");
+		  if (x.style.display === "none") {
+		    x.style.display = "block";
+		  } else {
+		    x.style.display = "none	";
+		  }
+		  x.scrollIntoView({behaviour: "smooth", block: "center"});
+		}	
+		function showpic3() {
+		  var x = document.getElementById("bigImg3");
+		  if (x.style.display === "none") {
+		    x.style.display = "block";
+		  } else {
+		    x.style.display = "none";
+		  }
+		  x.scrollIntoView({behaviour: "smooth", block: "center"});
+		}
+		function showpic4() {
+		  var x = document.getElementById("bigImg4");
+		  if (x.style.display === "none") {
+		    x.style.display = "block";
+		  } else {
+		    x.style.display = "none";
+		  }
+		  x.scrollIntoView({behaviour: "smooth", block: "center"});
+		}
+		function showpic5() {
+		  var x = document.getElementById("bigImg5");
+		  if (x.style.display === "none") {
+		    x.style.display = "block";
+		  } else {
+		    x.style.display = "none";
+		  }
+		  x.scrollIntoView({behaviour: "smooth", block: "center"});
+		}
+		function showpic6() {
+		  var x = document.getElementById("bigImg6");
+		  if (x.style.display === "none") {
+		    x.style.display = "block";
+		  } else {
+		    x.style.display = "none";
+		  }
+		  x.scrollIntoView({behaviour: "smooth", block: "center"});
+		}
+		function showpic7() {
+		  var x = document.getElementById("bigImg7");
+		  if (x.style.display === "none") {
+		    x.style.display = "block";
+		  } else {
+		    x.style.display = "none";
+		  }
+		  x.scrollIntoView({behaviour: "smooth", block: "center"});
+		}
+		function showpic8() {
+		  var x = document.getElementById("bigImg8");
+		  if (x.style.display === "none") {
+		    x.style.display = "block";
+		  } else {
+		    x.style.display = "none";
+		  }
+		  x.scrollIntoView({behaviour: "smooth", block: "center"});
+		}
+		</script>
+		
+	<!--Navigation bar-->
+	<nav>
+	<input type="checkbox" id="check">
+	<label for="check" class="checkbtn">
+	<i class="fas fa-bars"></i>
+	</label>
+	<img class="logo" src="Images/Inspirings_Arts_New.png" alt="logo1">
+		<ul>
+			<li><a href="main.html">Home</a></li>
+			<li><a href="gallerypage.html">Art House</a></li>
+			<li><a href="buyProductpg.html">Store</a></li>
+			<li><a href="Quiz.html">Quiz</a></li>
+			<li><a href="Sitemap.html">Site map</a></li>
+			<li><a href="Aboutus.html">About</a></li>
+			<li><a href="Query.html">Ratings & Reviews</a></li>
+		</ul>
+	</nav>
+	
+	<!--Scroll button-->
+	<button onclick="topFunction()" id="goTopBtn" title="Go to top"> &#8593; </button>
+	<br>
+	<script>
+	/*scroll button javascript*/
+
+		var mybutton = document.getElementById("goTopBtn");
+		
+		window.onscroll = function() {scrollFunction()};
+		
+		function scrollFunction() {
+		  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+		    mybutton.style.display = "block";
+		  } else {
+		    mybutton.style.display = "none";
+		  }
+		}
+		function topFunction() {
+		  document.body.scrollTop = 0;
+		  document.documentElement.scrollTop = 0;
+		}
+	</script>
+		<!--Page title and paragraph-->
+		<h1 id="galtitle">Ancient Portraits from Master Artists</h1><br>
+		<p id="galpara">Although portrait paintings, even self portraits have existed as long as art has, the renaissance era saw a
+			revival in them because many rich families commisioned artists to paint pictures of themselves so that they
+			could exist forever and to beautify their houses among other reasons. And since many artists were looking 
+			for money they did this no matter what. Take a look a some of these paintings.</p>
+		
+		<!--Gallery images-->		
+		<div class="galpage">
+		<div class="row1">
+			<span><img class="galpics" id="pic1" src="Images/Girl%20with%20a%20Pearl%20Earring.jpg" alt="Girl with a pearl earring" title="Girl with a Pearl Earring" onclick="showpic1()"/></span>
+			<span><img class="galpics" id="pic2" src="Images/Mona%20Lisa.jpg" alt="Mona Lisa" title="Mona Lisa" onclick="showpic2()"/></span>
+			<span><img class="galpics" id="pic3" src="Images/Pablo%20Picasso581.png" alt="Portrait of Dora Maar" title="Portrait of Dora Maar" onclick="showpic3()"/></span>
+			<span><img class="galpics" id="pic4" src="Images/celestina.png" alt="Celestina" title="Celestina" onclick="showpic4()"/></span>
+		</div>
+		<div class=row2>
+			<span><img class="galpics" id="pic5" src="Images/self-portrait-with-thorn-necklace-and-hummingbird-frida-kahlo.png" alt="Frida Kahlo" title="Frida Kahlo" onclick="showpic5()"/></span>
+			<span><img class="galpics" id="pic6" src="Images/The%20Ugly%20Duchess.png" alt="The Ugly Duchess" title="The Ugly Duchess" onclick="showpic6()"/></span>
+			<span><img class="galpics" id="pic7" src="Images/Matisse-Woman-with-a-Hat.png" alt="Matisse Woman with a Hat" title="Mantisse Woman with a Hat" onclick="showpic7()"/></span>
+			<span><img class="galpics" id="pic8" src="Images/394px-Portrait_de_Dante.png" alt="Portrait of Dante" onclick="showpic8()"/></span>
+		</div>
+		</div>
+		
+		<!--Larger images with desccription-->
+		<div class="displaybigpics">
+		<div id="bigImg1" style="display: none">
+			<img src="Images/bigimgs/300px-1665_Girl_with_a_Pearl_Earring%20big.png" alt="Girl with a pearl earring"/>
+			<div  class="picstory">
+			<h2>Girl with a pearl earring</h2>
+			<p>Selected as the most beautiful painting in the Netherlands, the Girl with the Pearl was drawn by Johannes
+				Vermeer of in 1665 during the Dutch Golden Age. The painting is a tronie-meaning that it was more of a 
+				study of facial expression rather than a portrait. Although the highlight of the painting is the Pearl 
+				Earring, Vermeer use of light in the Girl's face and her moist lips display the richness of the Dutch Golden
+				Age.</p>
+			</div>
+		</div>
+		<div id="bigImg2" style="display: none">
+			<img src="Images/bigimgs/mona%20lisa%20big.png" alt="Mona Lisa"/>
+			<div  class="picstory">
+			<h2>Mona Lisa</h2>
+			<p>Calling it the most recognized portrait in the world would be understating the fame of the celebrated Mona 
+				Lisa. Drawn by the multi-talented artist Leonardo da Vinci, the portrait has the most mysterious backstory
+				of any Renaissance paintings. Studies show that it was Da Vinci's most prized painting as well because 
+				he used to carry it with him wherever he went. Whatever it is, the sfumato style of this portrait still takes
+				away the breath of those who look at it in awe.</p>
+			</div>
+		</div>
+			<div id="bigImg3" style="display: none">
+			<img src="Images/bigimgs/Pablo%20Picasso581%20big.png" alt="Portrait of Dora Maar"/>
+			<div class="picstory">
+			<h2>Portrait of Dora Maar</h2>
+			<p>Dora Markovic, a young Yugoslavic photographer who met Pablo Picasso found a place in one of his portraits. Picasso 
+				and Dora had become thick friends. The portrait is contains the usual features of Picasso's paintings. Highly vivid, 
+				different coloured eyes, face shown both in frontal and profile view. Even then, some say that the resemblance of this
+				portrit is uncanny-even being 'truer than life'. Picasso has used those unique and vivid colours to provide depth
+				and meaning to his portraits.</p>
+		</div>
+		</div>		
+		<div id="bigImg4" style="display: none">
+			<img src="Images/bigimgs/celestina%20big.png" alt="Celestina"/>
+			<div  class="picstory">
+			<h2>Celestina</h2>
+			<p>Drawn by Pablo Picasso, this art was inspired by Picasso's own life as an unrecognized artist as well as his
+				depression due to his friend's death. This is a painting of the blue period where the blueness of the painting 
+				was used to convey feelings of loss and misery. The woman here is partially blind and is partially based on a 
+				character of the same name from a Spanish play called Aurora Roja. This picture is strikingly representative of 
+				Picasso's belief that eyes were the most inmportant organ.
+		</div>
+		</div>		
+		<div id="bigImg5" style="display: none">
+			<img src="Images/bigimgs/self-portrait-with-thorn-necklace-and-hummingbird-frida-kahlo%20big.png" alt="Frida Kahlo"/>
+			<div  class="picstory">
+			<h2>Self Portrait with Thorn Necklace and Hummingbird</h2>
+			<p>This extremely unrealistic self portrait of Frida Kahlo drawn in the 1940s is in no way less of strong symbolism. 
+				This was drawn after her husband divorced her and her affair with a photographer ended. Frida's accident made her
+				unable to bear children and left her bedridden for the most of her life. So the black monkey, cat and bird symbolize 
+				her loss of freedom. The thorn necklace is also a symbol as well. It should be known that many of Frida's portraits 
+				were self portraits and all of them contain tons of symbolism.</p>
+		</div>
+		</div>
+		<div id="bigImg6" style="display: none">
+			<img src="Images/bigimgs/Quentin_Matsys_-_A_Grotesque_old_woman%20big.png" alt="The Ugly Duchess"/>
+			<div  class="picstory">
+			<h2>The Ugly Duchess</h2>
+			<p>Painted by Quinten Massys in 1513 is actually known as the Old Woman and there was a huge mystery surrounding the art 
+				as to whether the woman actually looked like this. Da Vinci has had a long history of painting grotesques-pictures of 
+				abnormal faces created simply out of imagination. But recent researches have uncovered the fact that this portrait is
+				that of a real woman's who had an exceptionally rare form of Paget's Disease-an abnormality that enlarges and deforms 
+				bones.</p>
+		</div>
+		</div>
+		<div id="bigImg7" style="display: none">
+			<img src="Images/bigimgs/Matisse-Woman-with-a-Hat%20big.png" alt="Matisse Woman with a Hat"/>
+			<div  class="picstory">
+			<h2>Woman with a Hat</h2>
+			<p>Henri Matisse drew his wife as an oil on canvas in this painting. It was painted in 1905 and exhibited at the Automne
+				Salon. Woman with a Hat drew a lot of controversy because of its unique brush strokes, vivid and unnatural colours 
+				and basically an unfinished look. This was also the painting that led to a style that came to be known as Fauvism-
+				an extremely expressive style of painting. Although this painting was unfavourable among critics when it was exhibited,
+				it became a huge center of attention among the general public.</p>
+		</div>
+		</div>
+		<div id="bigImg8" style="display: none">
+			<img src="Images/bigimgs/394px-Portrait_de_Dante%20big.png" alt="Matisse Woman with a Hat"/>
+			<div  class="picstory">
+			<h2>Portrait of Dante</h2>
+			<p>This unique portrait displays not just one but two of the most unique personalities of the Renaissance era.
+				Sandro Botticelli and Dante Alighieri. Dante is known for his famous Inferno-a serious of poems about a man's 
+				journey from purgatory to hell to heaven. This portrait was drawn on sheepskin by Botticelli who was an ardent
+				in poetic literature. He had loved Dante's poem so much in fact he had planned to draw each stanza of Dante's 
+				poem. </p>
+			</div>
+		</div>
+		</div>
+		<div id="galpage2">
+		<p id="galpara2">Do you want to have some fun? Check this out:</p>
+		
+	    <!-- Selction for backbround color and text colour-->
+		<div class="selectDiv">
+			<div class="selections">
+				<div class="selectBox"></div>
+				<div class="heading"><h4 id="changebg">Change Background colour</h4></div>
+				<select id="bgcolid" class="drpDown1" onchange="getbgchoice()" >
+					<option class="opt" value="orange">Orange</option>
+					<option class="opt" value="tomato">Tomato</option>
+					<option class="opt" value="olive">Olive</option>
+					<option class="opt" value="plum">Plum</option>
+					<option class="opt" value="chocolate">Chocolate</option>
+				</select><br><br><br>
+	
+				<div class="selectBox2">
+				<div class="heading"><h4 id="changetxt">Change text colour</h4></div>
+				<select id="drp2" class="drpDown1" onchange="gettxtchoice()"> 
+					<option class="opt" value="black">Black</option>
+					<option class="opt" value="indigo">Indigo</option>
+					<option class="opt" value="turquoise">Turquoise</option>
+					<option class="opt" value="crimson">Crimson</option>
+				</select>
+				</div>	
+			</div>
+		</div>
+		</div>
+		
+	<!--Footer-->	
+	<footer class= "footer">
+	<div class="container">
+        <div class="sec aboutus">
+        <h2>About Us</h2>
+            <p>We showcase the finest arts by our most celebrated artists. Works are carefully selected so as to bring admiration to history by appreciating it and pass on the knowledge to the next generation.</p>
+        <ul class="social">
+            <li><a href="https://www.facebook.com/"><i class="fa fa-facebook" aria-hidden="true"> </i></a></li>
+            <li><a href="https://twitter.com/?lang=en"><i class="fa fa-twitter" aria-hidden="true"> </i></a></li>
+            <li><a href="https://www.instagram.com/"><i class="fa fa-instagram" aria-hidden="true"> </i></a></li>
+            <li><a href="https://www.youtube.com/"><i class="fa fa-youtube" aria-hidden="true"> </i></a></li>
+            <li><a href="https://lk.linkedin.com//"><i class="fa fa-linkedin" aria-hidden="true"> </i></a></li>
+        </ul>
+        <br>
+        <br>
+            <p>Page Editor - <a href="Student_4.html"><span id= "pgeditor">Harees Srinivasan</span></a></p>
+
+        </div>
+        <div class="sec quicklinks">
+            <h2>Quick Links</h2>
+            <ul>
+			<li><a href="main.html">Home</a></li>
+			<li><a href="gallerypage.html">Art House</a></li>
+			<li><a href="buyProductpg.html">Store</a></li>
+			<li><a href="Quiz.html">Quiz</a></li>
+			<li><a href="Sitemap.html">Site map</a></li>
+			<li><a href="Aboutus.html">About</a></li>
+            </ul>
+        </div>
+            <div class="sec contactinfo">
+            <h2>Contact Info</h2>
+            <ul class="info">
+                <li>
+                    <span><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+                    <span>58 Galle Rd<br>
+                    Colombo, 00600,<br>Sri Lanka</span>
+					<br><br>
+                </li>
+                
+                <li>
+                    <span><i class="fa fa-phone" aria-hidden="true"></i></span>
+                    <p><a href="tel:+94178956432">+94 178 956 432</a><br>
+                        <a href="tel:+94178956432">+94 178 956 432</a></p>
+						<br><br>
+                </li>
+                
+                <li>
+                    <span><i class="fa fa-envelope" aria-hidden="true"></i></span>
+                    <p><a href="mailto:inspiringarts@arts.ac.lk">inspiringarts@arts.ac.lk</a></p>
+                </li>
+            </ul>
+            </div>      
+	</div>
+    <div class="copyright">
+		<p>Copyright @ 2021 Inspiring Arts. All Rights Reserved</p>
+	</div>
+	</footer>
+	
+	</body>
+</html>

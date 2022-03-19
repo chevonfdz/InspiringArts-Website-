@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="HandheldFriendly" content="true">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>
+	<title>Inspiring Arts</title>
+	<link rel="icon" href="Images/Inspirings_Arts_New.png">
+</head>
+<body>
+	<!-- Navigation -->
+	<nav>
+	<input type="checkbox" id="check">
+	<label for="check" class="checkbtn">
+	<i class="fas fa-bars"></i>
+	</label>
+	<img class="logo" src="Images/Inspirings_Arts_New.png" alt="logo1">
+		<ul>
+			<li><a href="main.html">Home</a></li>
+			<li><a href="gallerypage.html">Art House</a></li>
+			<li><a href="buyProductpg.html">Store</a></li>
+			<li><a href="Quiz.html">Quiz</a></li>
+			<li><a href="Sitemap.html">Site map</a></li>
+			<li><a href="Aboutus.html">About</a></li>
+			<li><a href="Query.html">Ratings & Reviews</a></li>
+		</ul>
+	</nav>
+<!-- Scroll button -->
+<button onclick="topFunction()" id="goTopBtn" title="Go to top"> &#8593; </button>
+<script src="Js/main.js"></script>
+<br>
+
+<!-- Slide Show --> 
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+                <img src="Images/ps1.jpg" style="width:100%" alt="Img1">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="Images/ps2.jpg" style="width:100%" alt="Img2">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="Images/ps3.jpg" style="width:100%" alt="Img3">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="Images/ps4.jpg" style="width:100%" alt="Img4">
+            </div>
+        </div>
+        <br>
+        <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span> 
+                <span class="dot" onclick="currentSlide(2)"></span> 
+                <span class="dot" onclick="currentSlide(3)"></span> 
+                <span class="dot" onclick="currentSlide(4)"></span> 
+        </div>
+
+<!-- Slide Show script-->
+<script>
+   var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+    showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+    showSlides(slideIndex = n);
+    }
+
+    function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+            }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}    
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+            }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+        setTimeout(showSlides, 3000); // Change image every 3 seconds
+      }
+</script>   
+<br>   
+<!-- Body -->
+   
+   <!--Start Gallary-->
+    <div class="gallaryBack">
+        <div class="gallary">
+		<fieldset>
+			<h2>Visit our Art House</h2>
+           <br>
+            <p>Take a look at the greatest portraits of the Renaissance and the Golden Era of art.
+			Ranging from Romantic to Expressive, our gallery is full of unique art pieces from Da Vinci to Pablo Picasso.</p>
+        <br>
+            <div class="btnGallary">
+                <a href="gallerypage.html">CHECK HERE</a>
+            </div>
+		</fieldset>
+        </div>
+    </div>
+    <!--End Gallary--> 
+	
+    <!--Start Quiz-->
+    <div class="quizBackground">
+        <div class="quiz">
+		<fieldset>
+			<h2>Test your knowledge</h2>
+           <br>
+            <p>If you are looking forward to becoming an Artist, there is no better way to assess your knowledge than quizzes.
+			We have a online quiz for you that will help you identify knowledge gaps and build confidence.
+			Try and win Special prizes from our store.</p>
+        <br>
+            <div class="btnQuiz">
+                <a href="Quiz.html">TRY IT</a>
+            </div>
+		</fieldset>
+        </div>
+    </div>
+    <!--End quiz-->
+
+   <!--start buy products-->
+   <div class="store">
+   <h1>Visit Our Store</h1>
+    <div class="rows">
+        <div class="colomn">
+            <div class="cart">
+                <div class="product">
+                    <img class="productImg" src="Images/BlackTshirt.jpg" alt="pg1">
+                </div>
+                <div class="productInfo">
+                    <div class="productName">Men's Clothes</div>
+                    <div class="productIn">Click here to shop more!</div>
+                    <a class="btnAdd" href="buyProductpg.html">Shop now</a>
+                </div>
+            </div>
+        </div>
+    
+        <div class="colomn">
+            <div class="cart">
+                <div class="product">
+                    <img class="productImg" src="Images/WhiteTshirt%20(2).jpg" alt="pg2">
+                </div>
+                <div class="productInfo">
+                    <div class="productName">Women's Clothes</div>
+                    <div class="productIn">Click here to shop more!</div>
+                    <a class="btnAdd" href="buyProductpg.html">Shop Now</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="colomn">
+            <div class="cart">
+                <div class="product">
+                    <img class="productImg" src="Images/artproduct%20(2).jpg" alt="pg3">
+                </div>
+                <div class="productInfo">
+                    <div class="productName">Products</div>
+                    <div class="productIn">Click here to shop more!</div>
+                    <a class="btnAdd" href="buyProductpg.html">Shop Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+   </div>
+    <!--End buy products-->    
+   
+<!-- Team Members -->
+	<div class="ourTeam" id="ourTeam">
+        <h1>THE DEVELOPER TEAM</h1>
+        <div class="member">
+            <a title="Chevon Fernando" href="Student_1.html"><img src="Images/profile_photo.jpg" alt=""></a>
+            <a title="Yovindu Banula" href="Student2.html"><img src="Images/student2.jpg" alt=""></a>
+            <a title="Mathavan Suthaharan" href="Student_3.html"><img src="Images/student3.jpg" alt=""></a>
+            <a title="Harees Srinivasan" href="Student_4.html"><img src="Images/student4.jpg" alt=""></a>
+        </div>
+    </div>
+    
+<!-- End Team Members-->
+	
+	<!-- Footer -->	
+	<footer class= "footer">
+	<div class="container">
+        <div class="sec aboutus">
+        <h2>About Us</h2>
+            <p>We showcase the finest arts by our most celebrated artists. 
+			Works are carefully selected so as to bring admiration to history by appreciating it and pass on 
+			the knowledge to the next generation.</p>
+        <ul class="social">
+            <li><a href="https://www.facebook.com/"><i class="fa fa-facebook" aria-hidden="true"> </i></a></li>
+            <li><a href="https://twitter.com/?lang=en"><i class="fa fa-twitter" aria-hidden="true"> </i></a></li>
+            <li><a href="https://www.instagram.com/"><i class="fa fa-instagram" aria-hidden="true"> </i></a></li>
+            <li><a href="https://www.youtube.com/"><i class="fa fa-youtube" aria-hidden="true"> </i></a></li>
+            <li><a href="https://lk.linkedin.com//"><i class="fa fa-linkedin" aria-hidden="true"> </i></a></li>
+        </ul>
+        <br>
+        <br>
+            <p>Page Editor - <a href="Student2.html"><span id= "pgeditor">Yovindu Banula</span></a></p>
+
+        </div>
+        <div class="sec quicklinks">
+            <h2>Quick Links</h2>
+            <ul>
+			<li><a href="main.html">Home</a></li>
+			<li><a href="gallerypage.html">Art House</a></li>
+			<li><a href="buyProductpg.html">Store</a></li>
+			<li><a href="Quiz.html">Quiz</a></li>
+			<li><a href="Sitemap.html">Site map</a></li>
+			<li><a href="Aboutus.html">About</a></li>
+            </ul>
+        </div>
+             <div class="sec contactinfo">
+            <h2>Contact Info</h2>
+            <ul class="info">
+                <li>
+                    <span><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+                    <span>58 Galle Rd<br>
+                    Colombo, 00600,<br>Sri Lanka</span>
+          <br><br>
+                </li>
+                
+                <li>
+                    <span><i class="fa fa-phone" aria-hidden="true"></i></span>
+                    <p><a href="tel:+94178956432">+94 178 956 432</a><br>
+                        <a href="tel:+94178956432">+94 178 956 432</a></p>
+                        <br><br>
+                </li>
+                
+                <li>
+                    <span><i class="fa fa-envelope" aria-hidden="true"></i></span>
+                    <p><a href="mailto:inspiringarts@arts.ac.lk">inspiringarts@arts.ac.lk</a></p>
+                </li>
+            </ul>
+            </div>      
+          </div>
+    <div class="copyright">
+    <p>Copyright @ 2021 Inspiring Arts. All Rights Reserved</p>
+  </div>
+  
+  </footer>
+</body>
+</html>

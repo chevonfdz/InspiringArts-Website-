@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inspiration Arts</title>
+    <link rel="icon" href="Images/Inspirings_Arts_New.png">    
+    <script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>
+	<style>
+    
+*{
+  margin: 1px;
+  padding: 1px;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+body{
+   background-image: linear-gradient(to right,#CD853F,#DAA520,#b38e20,#D4AF37,#CFB53B,#996515);
+    font-family: 'Quicksand', sans-serif;
+}
+
+.wrapper{
+  position: relative;
+  top: 300px;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 800px;
+  display: flex;
+  box-shadow: 20px 40px 20px 0 rgba(6,90,100,.08);
+}
+
+.wrapper .left{
+  width: 35%;
+  background: linear-gradient(to right,#202a3b,#27364f);
+  padding: 60px 5px;
+  border-bottom-left-radius: 50px;
+  text-align: center;
+  color: #fff;
+}
+
+.wrapper .left img{
+  border-radius: 5px;
+  margin-bottom: 40px;
+}
+
+.wrapper .left h4{
+  margin-bottom: 15px;
+    font-size: 26px;
+    color: orange;
+}
+
+.wrapper .left p{
+  font-size:16px;
+}
+
+.wrapper .right{
+  width: 65%;
+  background: #fff;
+  padding: 30px 25px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.wrapper .right .info,
+.wrapper .right .projects{
+  margin-bottom: 70px;
+}
+
+.wrapper .right .info h3,
+.wrapper .right .projects h3{
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #e0e0e0;
+    color: #353c4e;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+}
+
+
+.wrapper .right .info_data .data,
+.wrapper .right .projects_data .data{
+  width: 100%;
+}
+
+.wrapper .right .info_data .data h4,
+.wrapper .right .projects_data .data h4{
+    font-family: Candara;
+    color: #353c4e;
+    margin-bottom: 6px;
+}
+
+.wrapper .right .info_data .data p,
+.wrapper .right .projects_data .data p{
+  font-size: 13px;
+  margin-bottom: 10px;
+  color: #919aa3;
+}
+
+.wrapper .social_media ul{
+  display: flex;
+}
+
+.wrapper .social_media ul li{
+  width: 45px;
+  height: 45px;
+  background: linear-gradient(to right,#202a3b,#27364f);
+  margin-right: 10px;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 45px;
+}
+
+.wrapper .social_media ul li a{
+  color :orange;
+  display: block;
+  font-size: 18px;
+}
+a{
+    color: aliceblue;
+}
+/*footer*/
+
+footer{
+	position: relative;
+    top: 200px;
+	width: 100%;
+	height: auto;
+	padding: 50px 100px 0px 50px;
+    margin: 2px;
+	background: black;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+footer .container{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	flex-direction: row;
+}
+footer .container .sec{
+	margin-right: 30px;
+}
+footer .container .sec.aboutus{
+	width: 40%;
+}
+footer .container  h2{
+	position: relative;
+	color: #fff;
+	font-weight: 500;
+	margin-bottom: 15px;
+}
+footer .container  h2:before{
+	content:'';
+	position: absolute;
+	bottom: -5px;
+	left: 0;
+	width: 50px;
+	height: 2px;
+	background: #f00;
+}
+footer  p{
+	color: #999;
+}
+#pgeditor{
+	color: #999;
+}
+.social{
+	margin-top: 20px;
+	display: flex;
+}
+.social li{
+	list-style: none;
+}
+.social li a{
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	background: #222;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-right: 10px;
+	text-decoration: none;
+	border-radius: 4px;
+}
+.social li a:hover{
+	background: #f00;
+}
+.social li a .fa{
+	color: #fff;
+	font-size: 20px;
+}
+	
+.quicklinks{
+	position: relative;
+	width: 25%;
+}
+.quicklinks ul li{
+	list-style: none;
+}
+.quicklinks ul li a{
+	color: #999;
+	text-decoration: none;
+	margin-bottom: 10px;
+	display: inline-block;
+}
+.quicklinks ul li a:hover{
+	color: white;
+	transition: .3s  ease;
+}
+.contactinfo{
+	width: auto;
+	margin-right: 0 !important;
+}
+.contactinfo .info{
+	position: relative;
+}
+.contactinfo.info li{
+	display: flex;
+	margin-bottom: 16px;
+}
+.contactinfo.info li span:nth-child(1){
+	color: #fff;
+	font-size: 20px;
+	margin-right: 10px;
+}
+.contactinfo.info li span{
+	color: #999;
+}
+.contactinfo.info li a{
+	color: #999;
+	text-decoration: none;
+}
+.contactinfo.info li a:hover{
+	color: #fff;
+}
+.info{
+	color: #999;
+}
+.copyright{
+	width: 100%;
+	background: #181818;
+	padding: 8px 100px;
+	text-align: center;
+	color: #999;
+}
+
+   
+</style>
+
+</head>
+
+<body>
+ 
+<div class="wrapper">
+    <div class="left">
+        <img src="Images/student4.jpg" alt="harees' image" width="100">
+        <h4>Harees Srinivasan</h4>
+         <p>Informatics Institute of Technology</p>
+         <br>
+         <p>University of Westminster</p>
+         <br>
+        <p><a href="mailto:harees.20200499@iit.ac.lk">harees.20200499@iit.ac.lk</a></p><br>
+        <p>IIT Student No: 20200499</p><br>
+        <p>UOW No: w1830218</p>
+    </div>
+    <div class="right">
+        <div class="info">
+            <h3>Information</h3>
+            <div class="info_data">
+                 <div class="data">
+                    <h4>  • A gallery page containing 8 paintings. </h4>
+                    <h4>  • A drop down menu to change the background colour of the gallery page. </h4>
+                    <h4>  • A drop down menu to change the font colour of the gallery page</h4>
+					<h4>  • When an image is clicked it's larger version appears with a description next to it. </h4>
+					<h4>  • A sitemap containing links to all pages done using SVG. </h4>
+                    <h4>  • Page Editor page. </h4>
+
+              </div>
+            </div>
+        </div>
+      
+      <div class="projects">
+            <h3>Projects</h3>
+            <div class="projects_data">
+                 <div class="data">
+                    <h4>Recent</h4>
+                    <p>Inspiring Arts webpage</p>
+                 </div>
+            </div>
+        </div>
+      
+
+        <ul class="social">
+            <li><a href="https://www.facebook.com/harees.srini.3/"><i class="fa fa-facebook" aria-hidden="true"> </i></a></li>
+            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"> </i></a></li>
+            <li><a href="https://www.instagram.com/harees_srini/?hl=en"><i class="fa fa-instagram" aria-hidden="true"> </i></a></li>
+            <li><a href="https://www.youtube.com/channel/UCYrUv7dON558wwQf0n_HtoA"><i class="fa fa-youtube" aria-hidden="true"> </i></a></li>
+			<li><a href="https://www.linkedin.com/in/harees-srinivasan-986964b7/"><i class="fa fa-linkedin" aria-hidden="true"> </i></a></li>
+        </ul>
+      </div>
+</div>
+<!--Footer-->	
+<footer class= "footer">
+	<div class="container">
+        <div class="sec aboutus">
+        <h2>About Us</h2>
+            <p>We showcase the finest arts by our most celebrated artists. Works are carefully selected so as to bring admiration to history by appreciating it and pass on the knowledge to the next generation.</p>
+        <ul class="social">
+            <li><a href="https://www.facebook.com/"><i class="fa fa-facebook" aria-hidden="true"> </i></a></li>
+            <li><a href="https://twitter.com/?lang=en"><i class="fa fa-twitter" aria-hidden="true"> </i></a></li>
+            <li><a href="https://www.instagram.com/"><i class="fa fa-instagram" aria-hidden="true"> </i></a></li>
+            <li><a href="https://www.youtube.com/"><i class="fa fa-youtube" aria-hidden="true"> </i></a></li>
+            <li><a href="https://lk.linkedin.com//"><i class="fa fa-linkedin" aria-hidden="true"> </i></a></li>
+        </ul>
+        <br>
+        <br>
+            <p>Page Editor - <a href="Student_4.html"><span id= "pgeditor">Harees Srinivasan</span></a></p>
+
+        </div>
+        <div class="sec quicklinks">
+            <h2>Quick Links</h2>
+            <ul>
+			<li><a href="https://w1839044.users.ecs.westminster.ac.uk/WebCW_w1839044/main.html">Home</a></li>
+			<li><a href="https://w1839044.users.ecs.westminster.ac.uk/WebCW_w1839044/gallerypage.html">Art House</a></li>
+			<li><a href="https://w1839044.users.ecs.westminster.ac.uk/WebCW_w1839044/buyProductpg.html">Store</a></li>
+			<li><a href="https://w1839044.users.ecs.westminster.ac.uk/WebCW_w1839044/Quiz.html">Quiz</a></li>
+			<li><a href="https://w1839044.users.ecs.westminster.ac.uk/WebCW_w1839044/Sitemap.html">Site map</a></li>
+			<li><a href="https://w1839044.users.ecs.westminster.ac.uk/WebCW_w1839044/Aboutus.html">About</a></li>
+            </ul>
+        </div>
+            <div class="sec contactinfo">
+            <h2>Contact Info</h2>
+            <ul class="info">
+                <li>
+                    <span><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+                    <span>58 Galle Rd<br>
+                    Colombo, 00600,<br>Sri Lanka</span>
+					<br><br>
+                </li>
+                
+                <li>
+                    <span><i class="fa fa-phone" aria-hidden="true"></i></span>
+                    <p><a href="tel:+94178956432">+94 178 956 432</a><br>
+                        <a href="tel:+94178956432">+94 178 956 432</a></p>
+						<br><br>
+                </li>
+                
+                <li>
+                    <span><i class="fa fa-envelope" aria-hidden="true"></i></span>
+                    <p><a href="mailto:inspiringarts@arts.ac.lk">inspiringarts@arts.ac.lk</a></p>
+                </li>
+            </ul>
+            </div>      
+	</div>
+    <div class="copyright">
+		<p>Copyright @ 2021 Inspiring Arts. All Rights Reserved</p>
+	</div>
+	</footer>
+</body>
+	
+</html>

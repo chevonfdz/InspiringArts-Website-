@@ -1,0 +1,309 @@
+*{
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	list-style: none;
+	box-sizing: border-box;
+    align-content: center;
+    align-items: center;
+    font-family: 'Raleway', sans-serif;
+}
+body{
+	background-image: linear-gradient(to right,#CD853F,#DAA520,#b38e20,#D4AF37,#CFB53B,#996515);
+}
+
+/*navigation bar styling*/
+
+nav{
+	background: black;
+	height: 80px;
+	width: 100%;
+}
+.logo {
+	width: 80px;
+	float: left;
+	margin-top: 0px;
+}
+nav ul{
+	float: right;
+	padding-right: 250px;
+}
+nav ul li{
+	display: inline-block;
+	line-height: 80px;
+	margin: 0 20px;
+}
+nav ul li a{
+	color: white;
+	font-size: 17px;
+	text-transform: uppercase;
+}
+nav ul li a:hover{
+	background-color: #68685C;
+	border-radius: 5px;
+	opacity: 0.9;
+	transition: .3s  ease;
+}
+.checkbtn{
+	font-size: 30px;
+	color: white;
+	float: right;
+	line-height: 80px;
+	margin-right: 40px;
+	cursor: pointer;
+	display: none;
+}
+#check{
+	display: none;
+}
+
+/*Responisve navigation bar styling*/
+
+@media (max-width: 952px){
+	label.logo{
+		font-size: 30px;
+		padding-left: 50px;
+	}
+	nav ul li a{
+		font-size:16px;
+	}
+}
+@media (max-width: 858px){
+	.checkbtn{
+		display: block;
+	}
+	ul{
+		position: fixed;
+		width: 100%;
+		height: 100vh;
+		background: #2c3e50;
+		top: 80px;
+		left: -100%;
+		text-align: center;
+		transition: all .5s;
+        z-index: 1000;
+	}
+	nav ul li{
+		display: block;
+		margin: 50px 0;
+		line-height: 30px;
+	}
+	nav ul li a{
+		font-size: 20px;
+	}
+	#check:checked ~ ul{
+		left: 0;
+	}
+}
+
+/* Scroll button*/
+
+#goTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 16px;
+  font-family: 'Raleway', sans-serif;
+  border: none;
+  outline: none;
+  background-color: #F8D704;
+  color: black;
+  font-weight: bold;
+  padding: 15px;
+  border-radius: 10px;
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+#goTopBtn:hover {
+    transform: scale(1.2);
+    opacity: 0.9;
+}
+
+
+/*Footer styling*/
+
+.footercls{
+	position: relative;
+	width: 100%;
+	height: auto;
+	padding: 50px 80px;
+	background: black;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.footercls .container{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	flex-direction: row;
+}
+.footercls .container .sec{
+	margin-right: 30px;
+}
+.footercls .container .sec.aboutus{
+	width: 40%;
+}
+.footercls .container  h2{
+	position: relative;
+	color: #fff;
+	font-weight: 500;
+	margin-bottom: 15px;
+}
+.footercls .container  h2:before{
+	content:'';
+	position: absolute;
+	bottom: -5px;
+	left: 0;
+	width: 50px;
+	height: 2px;
+	background: #f00;
+}
+.footercls  p{
+	color: #999;
+}
+#pgeditor{
+	color: #999;
+}
+.social{
+	margin-top: 20px;
+	display: flex;
+}
+.social li{
+	list-style: none;
+}
+.social li a{
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	background: #222;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-right: 10px;
+	text-decoration: none;
+	border-radius: 4px;
+}
+.social li a:hover{
+	background: #f00;
+}
+.social li a .fa{
+	color: #fff;
+	font-size: 20px;
+}
+	
+.quicklinks{
+	position: relative;
+	width: 25%;
+}
+.quicklinks ul li{
+	list-style: none;
+}
+.quicklinks ul li a{
+	color: #999;
+	text-decoration: none;
+	margin-bottom: 10px;
+	display: inline-block;
+}
+.quicklinks ul li a:hover{
+	color: white;
+	transition: .3s  ease;
+}
+.contactinfo{
+	width: auto;
+	margin-right: 0 !important;
+}
+.contactinfo .info{
+	position: relative;
+}
+.contactinfo.info li{
+	display: flex;
+	margin-bottom: 16px;
+}
+.contactinfo.info li span:nth-child(1){
+	color: #fff;
+	font-size: 20px;
+	margin-right: 10px;
+}
+.contactinfo.info li span{
+	color: #999;
+}
+.contactinfo.info li a{
+	color: #999;
+	text-decoration: none;
+}
+.contactinfo.info li a:hover{
+	color: #fff;
+}
+.info{
+	color: #999;
+}
+.copyright{
+    position: relative;
+    top: 20px;
+	width: 100%;
+	padding: 8px 100px;
+	text-align: center;
+	color: #999;
+}
+@media screen and (max-width:992px){
+    
+    .aboutus, .contactinfo{
+        width: 35%;
+    }
+    .quicklinks{
+        width: 30%;
+    }
+}
+
+@media screen and (max-width:767px){
+    .aboutus, .contactinfo, .quicklinks{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .container{
+        flex-direction: column;
+    }
+}   
+
+/*Sitemap page styling*/
+#sitemaptitle {
+	font-family: Candara;
+	text-align: center;
+	font-size: 80px;
+	padding-left: 50px;
+	
+}
+
+#mysvg g:hover polyline,
+#mysvg g:hover line {
+	fill: none;
+	stroke-width: 1;
+	stroke: black;
+}
+
+#mysvg g:hover g text,
+#mysvg g:hover text {
+	font-weight: bold;
+	font-size: 20px;
+}
+
+#mysvg g:hover polygon,
+#mysvg g:hover rect,
+#mysvg g:focus polygon,
+#mysvg g:focus rect {
+	fill: #FFD700;
+	stroke: black;
+	stroke-width: 5;
+}
+
+.rect {cursor: pointer;
+}
+
+#mysvg {position: relative;
+left: 45%;
+bottom: 10px;}
+	
